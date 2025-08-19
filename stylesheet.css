@@ -1,20 +1,35 @@
+:root {
+  --header_color: #222831;
+  --background: #393E46;
+  --accent: #00ADB5;
+  --text_color: #EEEEEE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+} 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f5ed;
+  color: var(--text_color);
+  background-color: var(--background);
   print-color-adjust: exact;
 }
 
 #wrapper {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 250vh;
+  width: 100%;
 }
 
 #header {
+  background-color: var(--header_color);
   display: flex;
   flex-direction: row;
-  height: 25%;
+  height: 22vh;
   width: 100%;
+  padding: 10px;
 }
 
 #contactinfo {
@@ -27,10 +42,11 @@ body {
 }
 
 #experience {
-  height: 100%;
+  height: 200vh;
   display: flex;
   flex-direction: column;
   padding: 20px;
+  border-left: var(--header_color) solid 10px;
 }
 
 #linkedin {
@@ -43,21 +59,26 @@ h1 {
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 hr {
   border: 0;
   display: block;
-  width: 80%;
-  background-color: #aeaeae;
+  width: 90%;
+  background-color: var(--accent);
   height: 1px;
-  border-top: solid 1px #000 !important;
+  border-top: solid 1px var(--accent) !important;
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 img {
   width: 90%;
+  border: var(--accent) solid 2px;
 }
+
 .button {
   margin: 5px;
 }
@@ -77,4 +98,15 @@ a.button {
 
 .empty {
   height: 10px;
+}
+
+ul{
+  margin-left: 30px;
+}
+li{
+  margin: 5px;
+}
+
+table{
+  margin-left: 20px;
 }
